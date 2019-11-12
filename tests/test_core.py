@@ -16,4 +16,16 @@ import playground
 
 def test_find_peaks():
     peaks = playground.core.find_peaks([0, 2, 1])
-    assert peaks == [2]  
+    assert peaks == [2] 
+    
+def test_find_peaks_border():
+    peaks = playground.core.find_peaks([2, 0, 3, 2, 3])
+    assert peaks == [3] 
+
+def test_find_multiple_peaks_border():
+    peaks = playground.core.find_peaks([2, 3, 0, 3, 2, 3])
+    assert peaks == [3, 3]  
+
+def test_find_peaks():
+    peaks = playground.core.find_peaks([])
+    assert peaks == [] 
