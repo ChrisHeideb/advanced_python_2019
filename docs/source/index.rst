@@ -10,7 +10,7 @@ Welcome to playground's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   core
 
 Indices and tables
 ==================
